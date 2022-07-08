@@ -23,8 +23,8 @@ const App = (props) => {
     })
 
     const filterItem = () => {
-        return data.filter(function (ele) {
-            return ele.name.toLowerCase().includes(search.toLowerCase()) || (ele.id === Number(search))
+        return movies.filter(function (ele) {
+            return ele.name.toLowerCase().includes(search.toLowerCase()) || (ele.movieRank === Number(search))
         })
     }
 
